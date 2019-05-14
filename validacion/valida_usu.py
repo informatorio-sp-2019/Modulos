@@ -19,3 +19,8 @@ def valida_long_max(usuario):
 		lRetorno = True
 
 	return lRetorno
+
+def valida_alfanum(usuario):
+	
+	return usuario.isalnum()
+
