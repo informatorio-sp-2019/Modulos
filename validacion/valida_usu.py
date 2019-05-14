@@ -12,3 +12,10 @@ def valida_long_min(usuario):
 
 	return lRetorno
 
+def valida_long_max(usuario):
+	if len(usuario) > 12:
+		lRetorno = False
+	else:
+		lRetorno = True
+
+	return lRetorno
