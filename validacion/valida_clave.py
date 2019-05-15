@@ -6,6 +6,7 @@ MÓDULO VALIDA CLAVE
 •	Contraseña válida, retorna True.
 •	Contraseña no válida, retorna el mensaje "La contraseña elegida no es segura".
 """
+
 def valida_long_min(clave):
 	"""
 	+ recibe un str
@@ -18,3 +19,25 @@ def valida_long_min(clave):
 		lRetorno = True
 
 	return lRetorno
+
+def valida_minuscula(clave):
+	return clave.islower()
+
+def valida_mayuscula(clave):
+	return clave.isupper()
+
+#Función para validar caracter no alfanumérico
+
+def valida_caracter_no_alfanum(clave):
+    lRetorno = False
+    for c in clave:
+        if not c.isalnum():
+            lRetorno = True
+            break
+
+    return lRetorno   
+
+def valida_espacios(clave):
+	return ' ' in clave
+
+
