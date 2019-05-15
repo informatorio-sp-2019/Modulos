@@ -53,3 +53,41 @@ def valida_espacios(clave):
 	return ' ' in clave
 
 
+def __main():
+	while True:
+		from os import system
+		system('cls')
+		clave = input('Clave: ')
+		if not valida_long_min(clave):
+			print('\n Debe ingresar un mínimo de 8 caracteres!')
+			input()			
+			continue
+
+		if valida_espacios(clave):
+			print('\n La clave no puede contener espacios en blanco!')
+			input()			
+			continue
+
+		# import ipdb
+		# ipdb.set_trace()
+		if valida_minuscula(clave) or valida_mayuscula(clave) :
+			print('\n La clave debe estár compuesta por, al menos, una minúscula y una mayúscula!')
+			input()			
+			continue
+
+		if not valida_caracter_numerico(clave):
+			print('\n La clave debe contener, al menos, un caracter numérico!')
+			input()			
+			continue
+
+		if not valida_caracter_no_alfanum(clave):
+			print('\n La clave debe contener, al menos, un símbolo!')
+			input()			
+			continue
+
+		print('\n ¡Clave validada!')
+		input()
+		break	
+		
+if __name__ == '__main__':
+	__main()
