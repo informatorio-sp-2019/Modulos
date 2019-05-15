@@ -7,7 +7,6 @@ MÓDULO VALIDA CLAVE
 •	Contraseña no válida, retorna el mensaje "La contraseña elegida no es segura".
 """
 
-
 #Función para validar caracter no alfanumérico
 
 def valida_caracter_no_alfanum(clave):
@@ -18,3 +17,7 @@ def valida_caracter_no_alfanum(clave):
             break
 
     return lRetorno   
+
+def valida_espacios(clave):
+	return ' ' in clave
+
