@@ -12,3 +12,19 @@ def valida_minuscula(clave):
 
 def valida_mayuscula(clave):
 	return clave.isupper()
+
+#Función para validar caracter no alfanumérico
+
+def valida_caracter_no_alfanum(clave):
+    lRetorno = False
+    for c in clave:
+        if not c.isalnum():
+            lRetorno = True
+            break
+
+    return lRetorno   
+
+def valida_espacios(clave):
+	return ' ' in clave
+
+
