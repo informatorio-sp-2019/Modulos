@@ -6,3 +6,9 @@ MÓDULO VALIDA CLAVE
 •	Contraseña válida, retorna True.
 •	Contraseña no válida, retorna el mensaje "La contraseña elegida no es segura".
 """
+
+def valida_minuscula(clave):
+	return clave.islower()
+
+def valida_mayuscula(clave):
+	return clave.isupper()
