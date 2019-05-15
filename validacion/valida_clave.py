@@ -6,3 +6,14 @@ MÓDULO VALIDA CLAVE
 •	Contraseña válida, retorna True.
 •	Contraseña no válida, retorna el mensaje "La contraseña elegida no es segura".
 """
+
+
+"""" La contraseña debe contener valores numericos """
+def valida_caracter_numerico(clave):
+	lRetorno = False
+	for c in clave:
+		if c.isdigit():
+			lRetorno = True
+			break
+
+	return lRetorno
