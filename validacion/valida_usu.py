@@ -20,6 +20,10 @@ def valida_long_max(usuario):
 
 	return lRetorno
 
+def valida_alfanum(usuario):
+	
+	return usuario.isalnum()
+
 def __main():
 	""" ésta función está definida como privada, sólo puede accederse desde
 	    éste módulo, y no desde otro, cuando es importado. 
@@ -52,3 +56,6 @@ if __name__ == '__main__':
 	    y no cuando importemos desde ótro módulo. 
 	"""
 	__main()
+
+
+
