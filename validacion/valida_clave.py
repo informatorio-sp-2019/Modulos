@@ -6,3 +6,6 @@ MÓDULO VALIDA CLAVE
 •	Contraseña válida, retorna True.
 •	Contraseña no válida, retorna el mensaje "La contraseña elegida no es segura".
 """
+
+def valida_espacios(clave):
+	return ' ' in clave
